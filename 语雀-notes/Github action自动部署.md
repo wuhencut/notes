@@ -9,13 +9,13 @@
 
 - **首先就是在github - actions中构建一个workflow**
 
-**![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343257710-3f380196-a7ab-4628-9e28-1900a4b8b9e4.png#align=left&display=inline&height=125&margin=%5Bobject%20Object%5D&name=image.png&originHeight=250&originWidth=606&size=22950&status=done&style=none&width=303)**
+![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343257710-3f380196-a7ab-4628-9e28-1900a4b8b9e4.png)
 
-- ![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343291169-ed5638d4-badf-40f1-a4a1-65737a7a1e86.png#align=left&display=inline&height=252&margin=%5Bobject%20Object%5D&name=image.png&originHeight=503&originWidth=811&size=60524&status=done&style=none&width=406)**选择一个模板**
+- ![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343291169-ed5638d4-badf-40f1-a4a1-65737a7a1e86.png)**选择一个模板**
 - **改这个yml文件**
 - **需要拿到阿里云的access key 和id id你可以看到，但是key默认是隐藏的，所以你需要新建一个，会弹窗，只给你看一次。**
 
-**![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343646487-caa5b083-42ba-4efc-bec5-1d0182f4558b.png#align=left&display=inline&height=185&margin=%5Bobject%20Object%5D&name=image.png&originHeight=369&originWidth=337&size=26022&status=done&style=none&width=169) ![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343678862-9797fd3a-1292-45bf-8223-f460f33e51e7.png#align=left&display=inline&height=203&margin=%5Bobject%20Object%5D&name=image.png&originHeight=406&originWidth=777&size=37033&status=done&style=none&width=389)**<br />****把id和key都复制下来，到github 对应目录下的setting - secrets中创建 id和key就好了 看图吧<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343800944-b27737fe-748a-4fa9-aa05-3fe6c78d19b9.png#align=left&display=inline&height=631&margin=%5Bobject%20Object%5D&name=image.png&originHeight=631&originWidth=1638&size=92497&status=done&style=none&width=1638)****
+**![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343646487-caa5b083-42ba-4efc-bec5-1d0182f4558b.png) ![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343678862-9797fd3a-1292-45bf-8223-f460f33e51e7.png)**<br />****把id和key都复制下来，到github 对应目录下的setting - secrets中创建 id和key就好了 看图吧<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/126454/1598343800944-b27737fe-748a-4fa9-aa05-3fe6c78d19b9.png)****
 ```yaml
 # 在action的构建进度中展示的名字
 name: upload oss
