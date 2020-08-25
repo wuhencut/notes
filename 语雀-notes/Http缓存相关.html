@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Http缓存相关</h1>
+  <!doctype html>
+  <div class="lake-content-editor-core lake-engine lake-typography-classic" data-lake-element="root"
+    data-selection-undefined="%7B%22path%22%3A%5B%5B3%2C0%5D%2C%5B3%2C0%5D%5D%2C%22active%22%3Atrue%7D">
+    <h1 id="2135a9a1" data-lake-id="17b243b20a3d91be735bc873a6daf32f"
+      style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;"><br></h1>
+    <p data-lake-id="9f213dff4e021d0d53a660a8420feb1a"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      缓存分<strong>强缓存</strong>和<strong>协商缓存，</strong>强缓存(浏览器缓存)怎么控制<strong>：</strong></p>
+    <p data-lake-id="a9fff4382457b7afeaa333260e49814d"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <strong>强缓存</strong></p>
+    <p data-lake-id="df965e752fc24a67d8baae1c8186774a"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <ul data-lake-id="224c134d8411455f6fc32ccf633285ca" lake-indent="0"
+      style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+      <li data-lake-id="ce7ef21c93f38f6455ed73621c9027ab">Cache-Control：参数</li>
+    </ul>
+    <ul data-lake-id="0ee81642f750293cce50d64f0278abcc" lake-indent="1"
+      style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+      <ul data-lake-id="6269c1ee6aa0a6c0cd98d7efdccb7df3" lake-indent="0"
+        style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+        <li data-lake-id="6ffd0c41475c0357a62dcd2767df8eb5">max-age 缓存时间(秒)</li>
+        <li data-lake-id="ec3b9ebbe5baa1f01f34a6f2d0c0a146">no-cache 不走强缓存，与服务器协商缓存是否新鲜</li>
+        <li data-lake-id="386118b666f55c1534c27ae687104b85">no-store 不走强缓存也不走协商缓存，我就要新资源，就是这么giao</li>
+        <li data-lake-id="35030dff0915dc5e15b1ad0576dc8616">private：专用于个人的缓存，中间代理、CDN 等不能缓存此响应</li>
+        <li data-lake-id="6b3c4ccb56e5c254c6013f8804735df0">public：响应可以被中间代理、CDN 等缓存</li>
+        <li data-lake-id="7589e9b17d17d8a5d4cd4194a6990430">must-revalidate：在缓存过期前可以使用，过期后必须向服务器验证
+          (这几个用的太少了，我也不记，有点印象即可)</li>
+      </ul>
+    </ul>
+    <ul data-lake-id="989efa9fe54fbeb6048ab6d11345711f" lake-indent="0"
+      style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+      <li data-lake-id="2fba1ec4e1f0dd8dcb102ef1b6b5d9bd">Expires
+        最没用，一般不用：系统时间跟Expires比较，如果早点，就去那浏览器缓存，超过了就去拿服务器的。但是，我要是改了服务器时间就GG，所以会导致误差，一般不用</li>
+      <li data-lake-id="90eb0746c3f1967718e17e4232087609">Pragma 参数只有 no-cache
+        但是优先级比cache-control高，有了Pragma，Cache_control一边去</li>
+    </ul>
+    <p data-lake-id="18969e46f538648565e8bcedb578ba3c"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <p data-lake-id="e4912e0a689f884f8ddbfee4e78217fc"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <strong>协商缓存</strong></p>
+    <p data-lake-id="faa5fcc3033dfa92ad9ec6751ae96918"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <ul data-lake-id="6179e5a704685bf9fca4a439f5fd763e" lake-indent="0"
+      style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+      <li data-lake-id="0cfa1039f13208dd84f3af9ef43d2021">主要俩参数Etag和LastModified</li>
+    </ul>
+    <ul data-lake-id="d797355d6ac392ceb68419e9d10183b7" lake-indent="1"
+      style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+      <ul data-lake-id="9cee461628547025a3c99f888cabdabc" lake-indent="0"
+        style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+        <li data-lake-id="a0cbf4e6f5be3154ae3132bab51eace9">Etag是资源文件的哈希值，用来跟服务器资源文件匹配，不匹配就走新资源，匹配就滚回去拿浏览器缓存(304)的。</li>
+        <li data-lake-id="d0cd3df93e379802a773e83f529a8c8f">LastModified 字面意思，最近一次修改(的时间) Date格式的
+          跟服务器上次修改时间进行比较，相同也滚回去拿浏览器的缓存</li>
+      </ul>
+    </ul>
+    <p data-lake-id="ed67b53c74dce961185cb4f0f04a4535"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <p data-lake-id="8d98ee05521dd0f68dcfe54155faf7f6"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      Point：Etag比LastModify重要，因为ETag代表了文件的哈希值。</p>
+    <p data-lake-id="3ea494ed8359bf7d1c1d2d3cb397a5ba"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <p data-lake-id="4992a1c2a8a32a2ebd3945d0967e67de"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      参考：<a href="https://juejin.im/post/5eb7f811f265da7bbc7cc5bd"
+        target="_blank">https://juejin.im/post/5eb7f811f265da7bbc7cc5bd</a></p>
+    <p data-lake-id="395c5d2e096d0dc7c41cdf310eb05b7f"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <p data-lake-id="fcf8dba1b7a95749f0c93622121bdf22"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      <br></p>
+    <p data-lake-id="a629c465bf1be6ff8afaae4561d65751"
+      style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">
+      人脑不同，理解深度不同，欢迎补充。</p>
+  </div>
+</body>
+
+</html>
